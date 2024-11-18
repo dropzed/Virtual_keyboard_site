@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>КАРТА ПАЦИЕНТА</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="header">
+    <h1>ЗДРАВСТВУЙТЕ, ПАЦИЕНТ!</h1>
+    <h2>Пожалуйста, заполните анкету!</h2>
+</div>
+
+<div class="patient-form">
+    <label for="surname" class="form-label">Фамилия:</label>
+    <input type="text" id="surname" class="input" name="fam" placeholder="Ваша фамилия" readonly required/>
+
+    <label for="name" class="form-label">Имя:</label>
+    <input type="text" id="name" class="input" name="nam" placeholder="Ваше имя" readonly required/>
+
+    <label for="patronymic" class="form-label">Отчество:</label>
+    <input type="text" id="patronymic" class="input" name="patro" placeholder="Ваше отчество" readonly required/>
+
+    <label for="birth" class="form-label">Год рождения(дд.мм.гггг):</label>
+    <input type="text" id="birth" class="input" name="bir" placeholder="Ваш год рождения" readonly required/>
+
+    <label for="numbers" class="form-label">Телефон(только цифры):</label>
+    <input type="text" id="numbers" class="input" name="numbe" placeholder=" Ваш номер телефона" readonly required/>
+
+    <button type="button" class="submit-btn">Отправить</button>
+</div>
+
+<button class = "tgb" id="toggleButton_eng_rus">Язык/Language</button>
+<div class="keyboard" id="keyboard1">
+    <!-- КЛАВИАТУРА НАЧАЛО -->
+    <div class = "line num">
+        <button class="symbol">`</button>
+        <button class="symbol">!</button>
+        <button class="symbol">"</button>
+        <button class="symbol">№</button>
+        <button class="symbol">;</button>
+        <button class="symbol">%</button>
+        <button class="symbol">:</button>
+        <button class="symbol">?</button>
+        <button class="symbol">*</button>
+        <button class="symbol">(</button>
+        <button class="symbol">)</button>
+        <button class="symbol">_</button>
+        <button class="symbol">+</button>
+        <button class="back">Backspace</button>
+    </div>
+    <div class="line one">
+        <button class="letter">ё</button>
+        <button>1</button>
+        <button>2</button>
+        <button>3</button>
+        <button>4</button>
+        <button>5</button>
+        <button>6</button>
+        <button>7</button>
+        <button>8</button>
+        <button>9</button>
+        <button>0</button>
+        <button>-</button>
+        <button>=</button>
+        <button class="mail">mail</button>
+    </div>
+    <div class="line two">
+        <button class="tab">Tab</button>
+        <button class="letter">й</button>
+        <button class="letter">ц</button>
+        <button class="letter">у</button>
+        <button class="letter">к</button>
+        <button class="letter">е</button>
+        <button class="letter">н</button>
+        <button class="letter">г</button>
+        <button class="letter">ш</button>
+        <button class="letter">щ</button>
+        <button class="letter">з</button>
+        <button class="letter">х</button>
+        <button class="letter">ъ</button>
+        <button class="slice">/</button>
+    </div>
+    <div class="line three">
+        <button class="caps" id="toggleCaseButton">CapsLock</button>
+        <button class="letter">ф</button>
+        <button class="letter">ы</button>
+        <button class="letter">в</button>
+        <button class="letter">а</button>
+        <button class="letter">п</button>
+        <button class="letter">р</button>
+        <button class="letter">о</button>
+        <button class="letter">л</button>
+        <button class="letter">д</button>
+        <button class="letter">ж</button>
+        <button class="letter">э</button>
+        <button class="enter-btn">Enter</button>
+    </div>
+    <div class="line four">
+        <button class="mail">gmail</button>
+        <button class="letter">я</button>
+        <button class="letter">ч</button>
+        <button class="letter">с</button>
+        <button class="letter">м</button>
+        <button class="letter">и</button>
+        <button class="letter">т</button>
+        <button class="letter">ь</button>
+        <button class="letter">б</button>
+        <button class="letter">ю</button>
+        <button>.</button>
+        <button>,</button>
+        <button class="mail" id="yandex">yandex</button>
+        <!--  как сделать шифт? -->
+    </div>
+    <div class="line five">
+        <button class="other">@</button>
+        <button class="space">SPACE</button>
+        <button class="other">.com</button>
+        <button class="other" id="ru_dns1">.ru</button>
+    </div>
+</div>
+<!-- КЛАВИАТУРА ОКОНЧАНИЕ -->
+<div class="keyboard" id="keyboard2">
+    <div class = "line num">
+        <button class = "symbol">`</button>
+        <button class = "symbol">!</button>
+        <button class = "symbol">"</button>
+        <button class = "symbol">№</button>
+        <button class = "symbol">;</button>
+        <button class = "symbol">%</button>
+        <button class = "symbol">:</button>
+        <button class = "symbol">?</button>
+        <button class = "symbol">*</button>
+        <button class = "symbol">(</button>
+        <button class = "symbol">)</button>
+        <button class = "symbol">_</button>
+        <button class = "symbol">+</button>
+        <button class="back">Backspace</button>
+    </div>
+    <div class="line one">
+        <button class="letter">ё</button>
+        <button>1</button>
+        <button>2</button>
+        <button>3</button>
+        <button>4</button>
+        <button>5</button>
+        <button>6</button>
+        <button>7</button>
+        <button>8</button>
+        <button>9</button>
+        <button>0</button>
+        <button>-</button>
+        <button>=</button>
+        <button class="mail">mail</button>
+    </div>
+    <div class="line two">
+        <button class="tab">Tab</button>
+        <button class="letter">q</button>
+        <button class="letter">w</button>
+        <button class="letter">e</button>
+        <button class="letter">r</button>
+        <button class="letter">t</button>
+        <button class="letter">y</button>
+        <button class="letter">u</button>
+        <button class="letter">i</button>
+        <button class="letter">o</button>
+        <button class="letter">p</button>
+        <button class="letter">[</button>
+        <button class="letter">]</button>
+        <button class="slice">/</button>
+    </div>
+    <div class="line three">
+        <button class="caps" id="toggleCaseButton_">CapsLock</button>
+        <button class="letter">a</button>
+        <button class="letter">s</button>
+        <button class="letter">d</button>
+        <button class="letter">f</button>
+        <button class="letter">g</button>
+        <button class="letter">h</button>
+        <button class="letter">j</button>
+        <button class="letter">k</button>
+        <button class="letter">l</button>
+        <button class="letter">;</button>
+        <button class="letter">'</button>
+        <button class="enter-btn">Enter</button>
+    </div>
+    <div class="line four">
+        <button class="mail">gmail</button>
+        <button class="letter">z</button>
+        <button class="letter">x</button>
+        <button class="letter">c</button>
+        <button class="letter">v</button>
+        <button class="letter">b</button>
+        <button class="letter">n</button>
+        <button class="letter">m</button>
+        <button class="letter">,</button>
+        <button class="letter">.</button>
+        <button><</button>
+        <button>></button>
+        <button class="mail" id="yandex_">yandex</button>
+        <!--  как сделать шифт? -->
+    </div>
+    <div class="line five">
+        <button class="other">@</button>
+        <button class="space">SPACE</button>
+        <button class="other">.com</button>
+        <button class="other" id="ru_dns2">.ru</button>
+    </div>
+</div>
+
+<script src="script_welcome_page.js"></script>
+</body>
+</html>

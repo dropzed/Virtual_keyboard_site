@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ПОБЕДА</title>
+</head>
+<style>
+    #myDiv {
+        width: 300px;
+        height: 200px;
+        background-color: lightblue;
+        display: block; /* Изначально div видим */
+        margin-bottom: 10px;
+    }
+
+    #toggleButton {
+        position: fixed; /* Фиксируем кнопку */
+        top: 100px; /* Отступ от верхнего края */
+        left: 100px; /* Отступ от левого края */
+        padding: 10px 20px; /* Отступы внутри кнопки */
+        font-size: 16px; /* Размер шрифта */
+    }
+</style>
+<body>
+Вы вошли
+Ура
+
+<div id="myDiv">Это содержимое div</div>
+<button id="toggleButton">eng</button>
+
+
+<script>
+    let isHidden = false;
+
+    document.getElementById('toggleButton').onclick = function() {
+        const myDiv = document.getElementById('myDiv');
+        isHidden = !isHidden; // Меняем состояние
+
+        if (isHidden) {
+            myDiv.style.display = 'none'; // Скрываем div
+            this.textContent = 'ru'; // Меняем текст на кнопке
+        } else {
+            myDiv.style.display = 'block'; // Показываем div
+            this.textContent = 'eng'; // Меняем текст на кнопке
+        }
+    };
+</script>
+</body>
+</html>
